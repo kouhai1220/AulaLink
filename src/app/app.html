@@ -1,10 +1,14 @@
-<div class="app-shell">
-  <main class="app-content"><router-outlet /></main>
-  <nav class="bottom-nav" aria-label="Navegación principal">
-    <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><span>⌂</span><small>Inicio</small></a>
-    <a routerLink="/calendar" routerLinkActive="active"><span>◫</span><small>Agenda</small></a>
-    <a routerLink="/new" class="nav-add" aria-label="Nueva tarea">+</a>
-    <a routerLink="/tasks" routerLinkActive="active"><span>☷</span><small>Tareas</small></a>
-    <a routerLink="/progress" routerLinkActive="active"><span>◔</span><small>Progreso</small></a>
-  </nav>
-</div>
+@if (authService.isAuthenticated()) {
+  <div class="app-shell">
+    <main class="app-content"><router-outlet /></main>
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <a routerLink="/inicio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><span>⌂</span><small>Inicio</small></a>
+      <a routerLink="/calendario" routerLinkActive="active"><span>◫</span><small>Agenda</small></a>
+      <a routerLink="/nueva-tarea" class="nav-add" aria-label="Nueva tarea">+</a>
+      <a routerLink="/tasks" routerLinkActive="active"><span>☷</span><small>Tareas</small></a>
+      <a routerLink="/progreso" routerLinkActive="active"><span>◔</span><small>Progreso</small></a>
+    </nav>
+  </div>
+} @else {
+    <div class="auth-shell"><router-outlet /></div>
+}
