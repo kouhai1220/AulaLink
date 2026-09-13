@@ -1,0 +1,5 @@
+ angular.json          | 3 [32m++[m[31m-[m
+ src/app/app.css       | 1 [32m+[m
+ src/app/app.html      | 6 [32m++++++[m
+ src/app/app.routes.ts | 2 [32m++[m
+ 4 files changed, 11 insertions(+), 1 deletion(-)
