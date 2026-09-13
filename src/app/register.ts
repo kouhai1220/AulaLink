@@ -17,7 +17,13 @@ function matchingPasswords(control: AbstractControl): ValidationErrors | null {
     <main class="auth-page">
       <section class="auth-card">
         <a routerLink="/login" class="auth-back" aria-label="Volver al login">‹</a>
-        <div class="auth-brand"><span class="brand-mark">◆</span><strong>Aula<span>Link</span></strong></div>
+        <div class="auth-brand">
+          <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.5 18.5 11 4.5h2l6.5 14h-2.8l-1.4-3.2h-7.6L7.3 18.5H4.5Zm4.2-5.7h5.6l-2.8-6.4-2.8 6.4Z"/>
+            <circle cx="18.8" cy="18.5" r="1.7"/>
+          </svg>
+          <strong>Aula<span>Link</span></strong>
+        </div>
         <p class="auth-kicker">Empieza a organizarte</p>
         <h1>Crear cuenta</h1>
         <p class="auth-subtitle">Tu camino de estudio empieza aquí.</p>

@@ -1,6 +1,40 @@
-:root { --paper: #f7fbff; --ink: #10213f; --muted: #637795; --coral: #1769ed; --coral-dark: #0d52c2; --sage: #19b779; --soft: #eaf4ff; --line: #dce9f6; --line-strong: #c5d7eb; --blue-soft: #eef7ff; font-family: 'Trebuchet MS', sans-serif; color: var(--ink); background: var(--paper); }
+:root {
+  --paper: #f6f9ff;
+  --paper-strong: #edf4ff;
+  --ink: #182437;
+  --muted: #5f7190;
+  --coral: #2d6df6;
+  --coral-dark: #1d57d6;
+  --sage: #18b77a;
+  --soft: #edf4ff;
+  --line: #dfeafc;
+  --line-strong: #c7d8f4;
+  --blue-soft: #eff6ff;
+  --brand-glow: rgba(45, 109, 246, 0.18);
+  --card-shadow: 0 18px 40px rgba(16, 32, 56, 0.12);
+  --shadow-soft: 0 10px 24px rgba(26, 54, 90, 0.08);
+  --shadow-card: 0 18px 36px rgba(19, 44, 82, 0.09);
+  font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
 * { box-sizing: border-box; }
-html, body { margin: 0; min-height: 100%; background: var(--paper); }
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at top, #edf5ff 0%, #f5f8ff 35%, #eef3fb 100%);
+  color: var(--ink);
+}
+body {
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 button, input, textarea { font-family: inherit; }
 button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
-button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #e6a194; outline-offset: 3px; }
+a { text-decoration: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid rgba(45, 109, 246, 0.28);
+  outline-offset: 3px;
+}
+::selection { background: rgba(45, 109, 246, 0.18); }

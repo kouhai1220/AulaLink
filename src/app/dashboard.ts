@@ -12,7 +12,13 @@ import { TaskService } from './task.service';
     <section class="page dashboard-page">
       <header class="page-header">
         <div>
-          <div class="brand-lockup"><span class="brand-mark">◆</span><strong>Aula<span>Link</span></strong></div>
+          <div class="brand-lockup">
+            <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.5 18.5 11 4.5h2l6.5 14h-2.8l-1.4-3.2h-7.6L7.3 18.5H4.5Zm4.2-5.7h5.6l-2.8-6.4-2.8 6.4Z"/>
+              <circle cx="18.8" cy="18.5" r="1.7"/>
+            </svg>
+            <strong>Aula<span>Link</span></strong>
+          </div>
           <h1>¡Hola, {{ firstName() }}! 👋</h1>
           <p class="muted">¿Qué tienes pendiente hoy?</p>
         </div>
